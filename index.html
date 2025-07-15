@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamim.dev - Dynamic Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen bg-gray-900 text-gray-200">
+    <div id="cursor-follower" class="fixed z-50 pointer-events-none w-8 h-8 rounded-full bg-[#5378f6] opacity-30 blur-lg transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-150 ease-out"></div>
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-950 shadow-lg py-4 px-6 md:px-12 border-b border-[#5378f6]">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-[#5378f6] hover:text-blue-300 transition-colors duration-300">
+                Tamim.dev
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="nav-item text-lg font-medium hover:text-[#5378f6] transition-colors duration-300">Home</a>
+                <a href="#about" class="nav-item text-lg font-medium hover:text-[#5378f6] transition-colors duration-300">About</a>
+                <a href="#services" class="nav-item text-lg font-medium hover:text-[#5378f6] transition-colors duration-300">Services</a>
+                <a href="#skills" class="nav-item text-lg font-medium hover:text-[#5378f6] transition-colors duration-300">Skills</a>
+                <a href="#projects" class="nav-item text-lg font-medium hover:text-[#5378f6] transition-colors duration-300">Projects</a>
+                <a href="#contact" class="nav-item text-lg font-medium hover:text-[#5378f6] transition-colors duration-300">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-gray-400 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center min-h-screen-75 overflow-hidden">
+        <div id="three-background-container" class="absolute inset-0 z-0 opacity-70"></div>
+        <div class="relative z-10 container mx-auto text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4 animate-fade-in-up">
+                Hi, I'm <span class="text-[#5378f6]">Tamim</span>
+            </h1>
+            <p id="tagline-typewriter" class="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-up delay-200">
+                </p>
+            <button onclick="scrollToSection('projects')" class="bg-[#5378f6] hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out animate-fade-in-up delay-400">
+                View My Work
+            </button>
+            <div class="flex justify-center space-x-6 mt-8 animate-fade-in-up delay-500">
+                <a href="https://www.linkedin.com/in/MahabubTamim/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#5378f6] transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+                <a href="https://github.com/Tamimbd2" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#5378f6] transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.46 0 0-1 0-3 1.5a9.28 9.28 0 0 0-6 0c-2-1.5-3-1.5-3-1.5A4.8 4.8 0 0 0 2 13.5c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-5-2"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span class="sr-only">GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-16 md:py-24 bg-gray-950">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="md:w-full text-lg text-gray-300 leading-relaxed text-center md:text-left">
+                    <p class="mb-4">As a Flutter developer and digital content creator, I specialize in crafting high-performance, cross-platform mobile applications while also producing engaging, visually impactful video content. My work blends the precision of technology with the creativity of storytelling—delivering seamless, user-centric experiences that connect with audiences on both functional and emotional levels. With a passion for clean code, elegant design, and meaningful narratives, I aim to transform ideas into digital realities that inform, inspire, and innovate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="py-16 md:py-24 bg-gray-900">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">What I'm Doing</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-[#5378f6] text-center">
+                    <div class="text-[#5378f6] mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Mobile Apps</h3>
+                    <p class="text-gray-300 text-sm">Professional development of applications for Android and iOS.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-[#5378f6] text-center">
+                    <div class="text-[#5378f6] mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Web Development</h3>
+                    <p class="text-gray-300 text-sm">High-quality development of sites at the professional level.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-[#5378f6] text-center">
+                    <div class="text-[#5378f6] mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><line x1="3" x2="21" y1="9" y2="9"/><line x1="9" x2="9" y1="21" y2="9"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">UI/UX Design</h3>
+                    <p class="text-gray-300 text-sm">The most modern and high-quality design made at a professional level.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-[#5378f6] text-center">
+                    <div class="text-[#5378f6] mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-server"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Backend Development</h3>
+                    <p class="text-gray-300 text-sm">High-performance backend services designed for scalability and seamless user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="py-16 md:py-24 bg-gray-950">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-[#5378f6]">
+                    <h3 class="text-2xl font-semibold text-[#5378f6] mb-4">Programming Language</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            <span>Dart</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-code"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m10 13-2 2 2 2"/><path d="m14 17 2-2-2-2"/></svg>
+                            <span>HTML</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-code"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m10 13-2 2 2 2"/><path d="m14 17 2-2-2-2"/></svg>
+                            <span>CSS</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-code"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m10 13-2 2 2 2"/><path d="m14 17 2-2-2-2"/></svg>
+                            <span>JavaScript</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            <span>Java</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            <span>C</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-[#5378f6]">
+                    <h3 class="text-2xl font-semibold text-[#5378f6] mb-4">Databases</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                            <span>MySQL</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                            <span>Firebase</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                            <span>MongoDB</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-[#5378f6]">
+                    <h3 class="text-2xl font-semibold text-[#5378f6] mb-4">Tool & Other</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.46 0 0-1 0-3 1.5a9.28 9.28 0 0 0-6 0c-2-1.5-3-1.5-3-1.5A4.8 4.8 0 0 0 2 13.5c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-5-2"/><circle cx="12" cy="12" r="10"/></svg>
+                            <span>Github</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h-.71"/><path d="M12 16v6"/><path d="m3 16 4-4 4 4"/></svg>
+                            <span>Netlify</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h-.71"/><path d="M12 16v6"/><path d="m3 16 4-4 4 4"/></svg>
+                            <span>Vercel</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pen-tool"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l7.5 1.5L18 13z"/><path d="M2 2l7.5 7.5"/><path d="M10.5 5.5L18 13"/></svg>
+                            <span>Figma</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                            <span>Canva</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            <span>Android Studio</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-[#5378f6]">
+                    <h3 class="text-2xl font-semibold text-[#5378f6] mb-4">Tools for Content Creation</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="1" y="6" rx="2" ry="2"/></svg>
+                            <span>Adobe Premiere Pro</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="1" y="6" rx="2" ry="2"/></svg>
+                            <span>CapCut</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                            <span>Adobe Photoshop</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                            <span>Canva Pro</span>
+                        </span>
+                        <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mic"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+                            <span>Audacity</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="py-16 md:py-24 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">My Projects</h2>
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                </div>
+        </div>
+    </section>
+    <section id="contact" class="py-16 md:py-24 bg-gradient-to-br from-gray-900 to-gray-800">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-8">Get In Touch</h2>
+            <div class="flex flex-col md:flex-row md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <p class="text-lg text-gray-300 mb-6">
+                        I'm always open to new opportunities and collaborations. Feel free to reach out using the form below, or connect with me directly.
+                    </p>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" id="name" placeholder="Name" class="w-full p-3 rounded-md bg-gray-700 border border-gray-600 text-gray-200 placeholder-gray-400 focus:ring-2 focus:ring-[#5378f6] focus:border-transparent"/>
+                        </div>
+                        <div>
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" id="email" placeholder="Email" class="w-full p-3 rounded-md bg-gray-700 border border-gray-600 text-gray-200 placeholder-gray-400 focus:ring-2 focus:ring-[#5378f6] focus:border-transparent"/>
+                        </div>
+                        <div>
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea id="message" rows="5" placeholder="Message" class="w-full p-3 rounded-md bg-gray-700 border border-gray-600 text-gray-200 placeholder-gray-400 focus:ring-2 focus:ring-[#5378f6] focus:border-transparent resize-y"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-[#5378f6] hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-md shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out">
+                            Send Message
+                        </button>
+                        <p class="text-gray-400 text-xs mt-2">
+                            *Note: This form is for display purposes. For actual email sending, a backend service is required.
+                        </p>
+                    </form>
+                </div>
+                <div class="md:w-1/2 flex flex-col items-center md:items-start space-y-6 mt-8 md:mt-0">
+                    <a href="mailto:itstamim.ban@gmail.com" class="flex items-center space-x-3 text-lg text-[#5378f6] hover:text-blue-300 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <span>itstamim.ban@gmail.com</span>
+                    </a>
+                    <div class="flex space-x-6 mt-6">
+                        <a href="https://www.linkedin.com/in/MahabubTamim/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#5378f6] transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Tamimbd2" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#5378f6] transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.46 0 0-1 0-3 1.5a9.28 9.28 0 0 0-6 0c-2-1.5-3-1.5-3-1.5A4.8 4.8 0 0 0 2 13.5c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-5-2"/><circle cx="12" cy="12" r="10"/></svg>
+                            <span class="sr-only">GitHub</span>
+                        </a>
+                        <a href="https://www.facebook.com/fb.tamim" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#5378f6] transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="https://wa.me/+8801744463419" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#5378f6] transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            <span class="sr-only">WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-950 text-gray-400 py-8 text-center border-t border-[#5378f6]">
+        <div class="container mx-auto px-4">
+            <p>&copy; <span id="current-year"></span> Tamim.dev. All rights reserved.</p>
+            <p class="text-sm mt-2">Built with HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
