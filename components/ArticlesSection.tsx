@@ -1,7 +1,7 @@
 import React from 'react';
 import { Article } from '../types';
 
-const articles: Article[] = [
+articles: Article[] = [
   {
     imageUrl: 'https://i.postimg.cc/y8X8Rz4N/Gemini-Generated-Image-tmg78ftmg78ftmg7.png',
     title: 'Smart Umbrella Sharing System for Modern Cities',
@@ -18,7 +18,7 @@ const articles: Article[] = [
 
 ];
 
-const ArticleCard: React.FC<{ article: Article }> = ({ article }) => (
+ ArticleCard: React.FC<{ article: Article }> = ({ article }) => (
     <a href={article.url} target="_blank" rel="noopener noreferrer" className="block group">
         <div className="glass-card rounded-lg overflow-hidden h-full flex flex-col transition-all duration-300 transform group-hover:-translate-y-2 group-hover:shadow-cyan-500/30 shadow-lg">
             <img src={article.imageUrl} alt={article.title} className="w-full h-48 object-cover" />
@@ -36,7 +36,7 @@ const ArticleCard: React.FC<{ article: Article }> = ({ article }) => (
     </a>
 );
 
-const ArticlesSection: React.FC = () => {
+ ArticlesSection: React.FC = () => {
   return (
     <section id="articles" className="py-20">
       <div className="container mx-auto px-6">
