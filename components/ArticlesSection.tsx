@@ -9,9 +9,9 @@ const articles: Article[] = [
     url: 'https://umbrashare.netlify.app',
   },
   {
-    imageUrl: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-    title: 'What exactly is MCP, and why is it trending?',
-    tags: ['Tech', 'AI', 'Machine learning'],
+    imageUrl: 'https://i.postimg.cc/kgsd9Qtj/Gemini-Generated-Image-lsj7a5lsj7a5lsj7.png',
+    title: 'CleanCampus: Revolutionizing University Cleanliness Through Technology',
+    tags: ['Tech', 'FlutterApp', 'Firebase' 'EducationalTechnology'],
     url: '#',
   },
 
