@@ -5,19 +5,13 @@ const articles: Article[] = [
   {
     imageUrl: 'https://i.postimg.cc/y8X8Rz4N/Gemini-Generated-Image-tmg78ftmg78ftmg7.png',
     title: 'Smart Umbrella Sharing System for Modern Cities',
-    tags: ['IoT', 'App'],
+    tags: ['IoT', 'Flutter App','Startups'],
     url: 'https://umbrashare.netlify.app',
   },
   {
     imageUrl: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
     title: 'What exactly is MCP, and why is it trending?',
     tags: ['Tech', 'AI', 'Machine learning'],
-    url: '#',
-  },
-  {
-    imageUrl: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-    title: '19 Open Source Tools You Can Self-Host',
-    tags: ['Tools', 'Hosting'],
     url: '#',
   },
 
