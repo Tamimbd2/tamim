@@ -20,24 +20,7 @@ const articles: Article[] = [
     tags: ['Tools', 'Hosting'],
     url: '#',
   },
-    {
-    imageUrl: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-    title: 'Building a Scalable Flutter App Architecture',
-    tags: ['Flutter', 'Mobile Dev'],
-    url: '#',
-  },
-  {
-    imageUrl: 'https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-    title: 'The Future of State Management',
-    tags: ['State Management', 'BLOC'],
-    url: '#',
-  },
-  {
-    imageUrl: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-    title: 'UI/UX Principles for Developers',
-    tags: ['UI/UX', 'Design'],
-    url: '#',
-  },
+
 ];
 
 const ArticleCard: React.FC<{ article: Article }> = ({ article }) => (
