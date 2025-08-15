@@ -4,9 +4,9 @@ import { Article } from '../types';
 const articles: Article[] = [
   {
     imageUrl: 'https://i.postimg.cc/y8X8Rz4N/Gemini-Generated-Image-tmg78ftmg78ftmg7.png',
-    title: 'Why Engineers Struggle With Soft Skills',
-    tags: ['Career', 'Leadership'],
-    url: '#',
+    title: 'Smart Umbrella Sharing System for Modern Cities',
+    tags: ['IoT', 'App'],
+    url: 'https://umbrashare.netlify.app',
   },
   {
     imageUrl: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
