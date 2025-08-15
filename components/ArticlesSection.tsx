@@ -1,19 +1,13 @@
 import React from 'react';
 import { Article } from '../types';
-
-articles: Article[] = [
+ articles: Article[] = [
   {
     imageUrl: 'https://i.postimg.cc/y8X8Rz4N/Gemini-Generated-Image-tmg78ftmg78ftmg7.png',
     title: 'Smart Umbrella Sharing System for Modern Cities',
     tags: ['IoT', 'Flutter App','Startups'],
     url: 'https://umbrashare.netlify.app',
   },
-  {
-    imageUrl: 'https://i.postimg.cc/kgsd9Qtj/Gemini-Generated-Image-lsj7a5lsj7a5lsj7.png',
-    title: 'CleanCampus: Revolutionizing University Cleanliness Through Technology',
-    tags: ['Tech', 'FlutterApp', 'Firebase' 'EducationalTechnology'],
-    url: '#',
-  },
+
 
 
 ];
