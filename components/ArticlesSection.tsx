@@ -3,7 +3,7 @@ import { Article } from '../types';
 
 const articles: Article[] = [
   {
-    imageUrl: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
+    imageUrl: 'https://i.postimg.cc/y8X8Rz4N/Gemini-Generated-Image-tmg78ftmg78ftmg7.png',
     title: 'Why Engineers Struggle With Soft Skills',
     tags: ['Career', 'Leadership'],
     url: '#',
