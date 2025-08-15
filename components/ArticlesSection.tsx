@@ -14,12 +14,7 @@ const articles: Article[] = [
     tags: ['Tech', 'FlutterApp', 'Firebase' 'EducationalTechnology'],
     url: '#',
   },
-    {
-    imageUrl: 'https://i.postimg.cc/kgsd9Qtj/Gemini-Generated-Image-lsj7a5lsj7a5lsj7.png',
-    title: 'CleanCampus: Revolutionizing University Cleanliness Through Technology',
-    tags: ['Tech', 'FlutterApp', 'Firebase' 'EducationalTechnology'],
-    url: '#',
-  },
+
 
 ];
 
